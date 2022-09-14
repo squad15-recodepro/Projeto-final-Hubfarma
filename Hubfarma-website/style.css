@@ -650,13 +650,8 @@ footer {
   /*--PÁGINA CONTATO--*/
 
   #contato {
-    /* display: flex;
-    flex-direction: column; */
-    grid-template-areas:
-    "contato-title "
-    "contato-form "
-    "contato-infos"
-    "contato-redes";
+    display: flex;
+    flex-direction: column;
     padding: 10px;
   }
 
