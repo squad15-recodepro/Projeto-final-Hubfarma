@@ -1,0 +1,695 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  box-sizing: border-box;
+}
+
+body {
+  background: url(assets/images/fundo.png);
+}
+
+.color-blue {
+  color: #64b9fc;
+}
+
+.color-green {
+  color: #399c8a;
+}
+
+/*----HEADER----*/
+
+header {
+  /* background: #27d1b3; */
+  background: rgb(50, 129, 115);
+  background: linear-gradient(90deg, rgba(50, 129, 115, 1) 17%, rgba(50, 143, 127, 1) 31%, rgba(47, 170, 148, 1) 49%, rgba(39, 209, 179, 1) 61%);
+}
+
+#barra-de-navegacao {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#logo-title {
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.navbar-nav li a {
+  color: rgb(77, 77, 77);
+  transition: all 0.3s ease-in;
+}
+
+.navbar-nav li a:hover {
+  color: white;
+}
+
+/*----FIM HEADER----*/
+
+/*----MAIN----*/
+
+#banner {
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: rgb(77, 77, 77);
+}
+
+#banner img {
+  max-width: 600px;
+}
+
+#banner-text h1 {
+  font-size: 2rem;
+}
+
+#banner-text p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+#banner-text p:nth-child(3) {
+  font-size: 0.9rem;
+}
+
+#banner-buttons a {
+  text-decoration: none;
+}
+
+#banner-buttons {
+  text-align: center;
+}
+
+#banner-buttons i {
+  font-size: 1.4rem;
+}
+
+.btn-default {
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 15px;
+  border-radius: 60px;
+  min-width: 160px;
+  min-height: 60px;
+  color: rgb(77, 77, 77);
+  transition: all 0.3s ease-in;
+  box-shadow: 1px 1px 5px #3f5d74;
+}
+
+.btn1 {
+  background: #64b9fc;
+  min-width: 180px;
+}
+
+.btn1:hover {
+  background: #3f5d74;
+  color: white;
+}
+
+.btn2 {
+  background: #27d1b3;
+  min-width: 180px;
+}
+
+.btn2:hover,
+.btn3:hover {
+  background: #267e6e;
+  color: white;
+}
+
+.btn3 {
+  background: #27d1b3;
+}
+
+#second-main {
+  background: #f1f1f1;
+  padding: 40px 0;
+  margin: 0;
+}
+
+#notas {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topicos {
+  max-width: 15%;
+  color: #3f5d74;
+}
+
+.topicos i {
+  color: #3f5d74;
+  padding: 10px 0;
+}
+
+.topicos h3 {
+  font-size: 1.1rem;
+  color: #318f7e;
+}
+
+.topicos p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/*--PÁGINAS DE CADASTRO--*/
+
+#cadastro-layout {
+  background: white;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "infos form";
+  grid-template-columns: 2fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.cadastro-title {
+  grid-area: title;
+  text-align: center;
+  color: rgb(77, 77, 77);
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+  margin-bottom: 20px;
+}
+
+.cadastro-title h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.cadastro-infos {
+  grid-area: infos;
+  padding: 5px;
+  color: rgb(77, 77, 77);
+}
+
+.cadastro-infos h2 {
+  font-size: 1.3rem;
+  padding: 0 5px;
+}
+
+.cadastro-infos img {
+  max-width: 450px;
+}
+
+.cadastro-infos h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.item-lista-cadastro {
+  padding: 15px 0;
+}
+
+.item-lista-cadastro ul {
+  list-style-type: disc;
+}
+
+ul {
+  padding-left: 1px !important;
+}
+
+.cadastro-form {
+  grid-area: form;
+  padding: 20px 40px;
+  background: #354c5e;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 1px 1px 10px #354c5e;
+}
+
+.cadastro-form h3 {
+  font-size: 1.2rem;
+}
+
+.cadastro-form-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #354c5e !important;
+  border: none !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-body,
+.modal-title {
+  color: white;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.campos-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.campos-form input,
+.campos-form textarea,
+.campos-form select {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+#btn-cadastrar {
+  display: flex;
+  justify-content: center;
+}
+
+/*--FIM PÁGINAS DE CADASTRO--*/
+
+/*--PÁGINA SOBRE--*/
+
+#about {
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: rgb(77, 77, 77);
+  padding: 10px;
+}
+
+.about-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about-title h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.about-body {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px 40px 40px;
+}
+
+.about-body img {
+  max-width: 300px;
+  padding: 10px;
+}
+
+.about-body p {
+  background: #354c5e;
+  color: rgb(255, 255, 255);
+  max-width: 650px;
+  text-align: justify;
+  box-shadow: 1px 1px 30px rgb(66, 66, 66);
+  border-radius: 20px;
+  padding: 20px 30px;
+  font-size: 1.1rem;
+}
+
+.about-footer p {
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+/*--FIM PÁGINA SOBRE--*/
+
+/*--PÁGINA CONTATO--*/
+
+#contato {
+  display: grid;
+  grid-template-areas:
+    "contato-title contato-title"
+    "contato-form contato-infos"
+    "contato-form contato-redes";
+  max-width: 1200px;
+  background: white;
+  margin: 0 auto;
+  padding: 0 10px 60px 10px;
+}
+
+.contato-title {
+  grid-area: contato-title;
+}
+
+.contato-title h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
+  color: #474747;
+}
+
+.contato-form {
+  grid-area: contato-form;
+  background: #354c5e;
+  padding: 30px 30px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  max-width: 70%;
+  margin: 20px auto;
+  box-shadow: 1px 1px 20px black;
+}
+
+.contato-form h2 {
+  font-size: 1.3rem;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.contato-infos {
+  grid-area: contato-infos;
+  text-align: right;
+  background: #354c5e;
+  padding: 30px 30px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  max-width: fit-content;
+  height: fit-content;
+  margin: 20px auto;
+  box-shadow: 1px 1px 20px black;
+}
+
+.contato-infos h2 {
+  font-size: 1.3rem;
+}
+
+.contato-infos p,
+.contato-redes p {
+  margin: 0;
+}
+
+.contato-redes {
+  grid-area: contato-redes;
+  text-align: right;
+  background: #354c5e;
+  padding: 30px 30px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  height: fit-content;
+  margin: 20px auto;
+  box-shadow: 1px 1px 20px black;
+}
+
+.contato-redes h2 {
+  font-size: 1.3rem;
+}
+
+.contato-redes p a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.contato-redes-rows p:first-child a:hover {
+  color: #f041bb;
+  transition: 0.3s ease-in;
+}
+
+.contato-redes-rows p:nth-child(2) a:hover {
+  color: #4178f0;
+  transition: 0.3s ease-in;
+}
+
+.contato-redes-rows p:nth-child(3) a:hover {
+  color: #ee4a4a;
+  transition: 0.3s ease-in;
+}
+
+/*--FIM PÁGINA CONTATO--*/
+
+/*----FIM MAIN----*/
+
+/*----FOOTER----*/
+
+footer {
+  background: #3f5d74;
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+#footer-content h2 {
+  font-size: 1.1rem;
+  color: #27d1b3;
+  font-weight: bold;
+}
+
+#footer-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in;
+  padding: 5px 0;
+}
+
+#footer-content a:hover {
+  color: #64b9fc;
+}
+
+#empresa {
+  display: flex;
+  flex-direction: column;
+}
+
+#cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+#redes {
+  max-width: 20%;
+}
+
+#redes i {
+  color: white;
+  margin: 0 5px;
+  font-size: 1.3rem;
+}
+
+#redes i:hover {
+  color: #64b9fc;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#rights {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+#rights a {
+  text-decoration: none;
+  color: #64b9fc;
+}
+
+/*----FIM FOOTER----*/
+
+@media (max-width: 1199.98px) {
+  #banner img {
+    max-width: 400px;
+  }
+
+  #banner-text {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #banner-text {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /*----HEADER----*/
+
+  header {
+    background: #27d1b3;
+  }
+
+  .navbar-nav li a {
+    color: rgb(255, 255, 255);
+  }
+
+  /*----FIM HEADER----*/
+
+  /*----MAIN----*/
+
+  #banner {
+    padding: 15px 20px 30px 20px;
+  }
+
+  #banner img {
+    display: none;
+  }
+
+  #banner-text {
+    padding: 0;
+  }
+
+  #banner-text h1 {
+    font-size: 1.4rem;
+  }
+
+  #banner-text h1::after {
+    content: url(assets/images/leitor.svg);
+  }
+
+  #banner-text p {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0;
+  }
+
+  #banner-text p:nth-child(3) {
+    padding: 10px 0 0 0;
+  }
+
+  #banner-buttons {
+    padding-top: 15px;
+  }
+
+  #second-main {
+    padding: 10px;
+  }
+
+  #notas {
+    flex-direction: column;
+  }
+
+  .topicos {
+    max-width: 100%;
+    padding: 5px 0;
+  }
+
+  /*--PÁGINAS DE CADASTRO--*/
+
+  #cadastro-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 30px 10px;
+  }
+
+  .cadastro-title {
+    padding-bottom: 10px;
+  }
+
+  .cadastro-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .cadastro-form {
+    padding: 15px 30px;
+  }
+
+  .cadastro-infos h2 {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  /*--FIM PÁGINAS DE CADASTRO--*/
+
+  /*--PÁGINA SOBRE--*/
+
+  #about {
+    padding: 10px;
+  }
+
+  .about-title {
+    padding: 0;
+  }
+
+  .about-title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .about-body {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-body img {
+    max-width: 120px;
+  }
+
+  .about-body p {
+    font-size: 0.9rem;
+    padding: 15px 20px;
+  }
+
+  /*--FIM PÁGINA SOBRE--*/
+
+  /*--PÁGINA CONTATO--*/
+
+  #contato {
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-areas:
+    "contato-title "
+    "contato-form "
+    "contato-infos"
+    "contato-redes";
+    padding: 10px;
+  }
+
+  .contato-title h1 {
+    font-size: 1.4rem;
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  .contato-form {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .contato-redes {
+    margin-top: 0;
+  }
+
+  /*--FIM PÁGINA CONTATO--*/
+
+  /*----FIM MAIN----*/
+
+  /*----FOOTER----*/
+
+  #footer-content {
+    padding: 20px 5px;
+  }
+
+  #empresa,
+  #cadastro,
+  #redes {
+    max-width: 30%;
+  }
+
+  /*----FIM FOOTER----*/
+}

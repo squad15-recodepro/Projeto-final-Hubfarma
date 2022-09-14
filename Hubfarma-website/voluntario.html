@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seja um voluntário | Hubfarma</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/2126e0ca1f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="barra-de-navegacao" class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/favicon.png" alt="logo" width="60" />
+            <span id="logo-title">Hubfarma</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Toggler navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navegacao">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="sobre.html" class="nav-link">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a href="contato.html" class="nav-link">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="cadastro-layout">
+        <section class="cadastro-title">
+          <h1>Faça parte, seja um voluntário!</h1>
+        </section>
+        <section class="cadastro-infos">
+          <h2>
+            O voluntário é peça-chave na viabilização do projeto Hubfarma. É por meio dele que podemos levar a alfabetização às pessoas que precisam dela. Portanto, fique por dentro do papel do
+            <span class="color-blue">voluntário</span>:
+          </h2>
+          <img src="assets/images/voluntario.svg" />
+          <ol id="lista-cadastro-infos" type="A">
+            <li class="item-lista-cadastro">
+              <h3>Requisitos para se voluntariar:</h3>
+              <ul>
+                <li>Ter 18 (dezoito) anos ou mais.</li>
+                <li>Ser graduado em Letras, na modalidade licenciatura, ou em Pedagogia.</li>
+              </ul>
+            </li>
+            <li class="item-lista-cadastro">
+              <h3>Como a Hubfarma dará suporte ao voluntário:</h3>
+              <ul>
+                <li>Os custos de ida e volta para a localidade onde as aulas serão ministradas serão arcados pelo projeto.</li>
+                <li>Haverá um canal de comunicação exclusivo à disposição do voluntário durante todo o período de atuação no projeto.</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+        <section class="cadastro-form">
+          <div class="cadastro-form-header">
+            <h3>Entre para se voluntariar:</h3>
+            <button type="button" class="btn-default btn3" data-bs-toggle="modal" data-bs-target="#modalLogin">Entrar</button>
+            <!--MODAL-->
+            <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content login-form">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginLabel">Entre em sua conta:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="campos-form">
+                        <label for="email-login">E-mail:</label>
+                        <input type="email" name="email-login" id="email-login" />
+                      </div>
+                      <div class="campos-form">
+                        <label for="senha-login">Senha:</label>
+                        <input type="password" name="senha-login" id="senha-login" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-default btn1">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--FIM MODAL-->
+          </div>
+          <p>Se é a sua <b class="color-blue">primeira vez</b> aqui, realize seu cadastro:</p>
+          <form id="formulario">
+            <div class="campos-form">
+              <label for="nome-user">Nome completo:</label>
+              <input type="text" name="nome-user" id="nome-user" />
+            </div>
+            <div class="campos-form">
+              <label for="cpf-user">CPF:</label>
+              <input type="number" name="cpf-user" id="cpf-user" />
+            </div>
+            <div class="campos-form">
+              <label for="email-user">E-mail:</label>
+              <input type="email" name="email-user" id="email-user" />
+            </div>
+            <div class="campos-form">
+              <label for="data-nsc-user">Data de nascimento:</label>
+              <input type="date" name="data-nsc-user" id="data-nsc-user" />
+            </div>
+            <div class="campos-form">
+              <label for="endereco-user">Endereço completo:</label>
+              <textarea name="endereco-user" id="endereco-user" cols="40" rows="2" placeholder="Ex.: Rua José da Silva, 314, apartamento 102. Bairro Novo Brasil."></textarea>
+            </div>
+            <div class="campos-form">
+              <label for="uf-user">UF:</label>
+              <select name="uf-user" id="uf-user">
+                <option value=""></option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
+            </div>
+            <div class="campos-form">
+              <label for="formacao-user">Formação acadêmica:</label>
+              <select name="formacao-user" id="formacao-user">
+                <option value=""></option>
+                <option value="sc">Superior completo</option>
+                <option value="si">Superior incompleto</option>
+              </select>
+            </div>
+            <div id="btn-cadastrar">
+              <input class="btn-default btn1" type="submit" value="Cadastrar-se" />
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer-content">
+        <section id="empresa">
+          <h2>Hubfarma:</h2>
+          <a href="sobre.html">Sobre o projeto</a>
+          <a href="valores.html">Valores</a>
+          <a href="contato.html">Entre em contato</a>
+        </section>
+        <section id="cadastro">
+          <h2>Faça parte:</h2>
+          <a href="voluntario.html">Seja um voluntário</a>
+          <a href="sindicato.html">Cadastro de sindicatos</a>
+        </section>
+        <section id="redes">
+          <h2>Acompanhe nossas redes:</h2>
+          <i class="fa-brands fa-instagram instagram"></i>
+          <i class="fa-brands fa-facebook facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </section>
+      </div>
+      <span id="rights"><a href="https://github.com/squad15-recodepro">&COPY Squad 015 | 2022</a></span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
