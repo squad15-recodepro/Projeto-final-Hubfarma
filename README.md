@@ -16,6 +16,7 @@
   <li>Natália Vieira Silva</li>
   <li>Amanda Ignácio da Silva</li>
   <li>Ingrid Silva</li>
+  <li>Guilherme Mendes De Oliveira</li>
 </ul>
 
 
